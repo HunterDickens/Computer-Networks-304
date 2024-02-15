@@ -1,0 +1,47 @@
+Script started on Sun Feb 11 14:02:02 2024
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Hunters-Air.lan/Users/hunter/Desktop/Spring%202024/Computer%20Networks/Project1[0m[27m[24m[Jhunter@Hunters-Air Project1 % [K[?2004h./client
+[K[K[A[30C[1B[A[30Ccurl http://localhost:6789/HelloWorld.html[1B[A[30Cls                                        [1B[K[A[32Ccd Desktop/Spring\ 2024/Computer\ Networks/Project1[K[A[29Cls[K[1B[K[A[32Ccurl http://localhost:6789/HelloWorld.html[1B[K[A[30C./client                                  [1B[K[A[30C        [1B[K[A[30C../server[1m [0m[0m       test_server.sh[1m [0m[0m [?2004l[1BServer is listening on port 6789...
+Requesting HelloWorld.html via curl...
+<html>
+<body>
+  <h1>Hello, World!</h1>
+</body>
+</html>
+
+
+Stopping the server...
+./test_server.sh: line 25:  2437 Terminated: 15          ./server
+Restarting the server for client test cases...
+Server is listening on port 6789...
+Running client test cases...
+Test case 1: Requesting HelloWorld.html using the client
+
+Test case 2: Requesting NonExistentPage.html using the client
+
+Stopping the server after client test cases...
+./test_server.sh: line 54:  2441 Terminated: 15          ./server
+------ Starting Threading Demonstration ------
+Server restarted for threading demonstration
+Server is listening on port 6789...
+Starting client request for /HelloWorld.html in the background...
+Client request for /HelloWorld.html launched, output will be in response_/HelloWorld.html.txt
+Starting client request for /AnotherPage.html in the background...
+./test_server.sh: line 74: response_/HelloWorld.html.txt: No such file or directory
+Client request for /AnotherPage.html launched, output will be in response_/AnotherPage.html.txt
+./test_server.sh: line 74: response_/AnotherPage.html.txt: No such file or directory
+Starting client request for /NonExistentPage.html in the background...
+Client request for /NonExistentPage.html launched, output will be in response_/NonExistentPage.html.txt
+Waiting for server to process requests...
+./test_server.sh: line 74: response_/NonExistentPage.html.txt: No such file or directory
+Stopping the server after threading demonstration...
+./test_server.sh: line 91:  2446 Terminated: 15          ./server
+Responses from server:
+
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Hunters-Air.lan/Users/hunter/Desktop/Spring%202024/Computer%20Networks/Project1[0m[27m[24m[Jhunter@Hunters-Air Project1 % [K[?2004heexit[?2004l
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+Script done on Sun Feb 11 14:02:50 2024
