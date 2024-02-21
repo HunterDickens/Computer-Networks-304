@@ -1,9 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     '/Users/hunter/Desktop/Spring 2024/Computer Networks/Project1/server'
-relocations:
-  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _sendResponse, symObjAddr: 0x0, symBinAddr: 0x10000387C, symSize: 0xE4 }
-  - { offsetInCU: 0x82, offset: 0x82, size: 0x8, addend: 0x0, symName: _sendResponse, symObjAddr: 0x0, symBinAddr: 0x10000387C, symSize: 0xE4 }
-  - { offsetInCU: 0xFC, offset: 0xFC, size: 0x8, addend: 0x0, symName: _serveFile, symObjAddr: 0xE4, symBinAddr: 0x100003960, symSize: 0x15C }
-  - { offsetInCU: 0x1BF, offset: 0x1BF, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x240, symBinAddr: 0x100003ABC, symSize: 0x2AC }
-...
