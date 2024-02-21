@@ -1,6 +1,7 @@
-Script started on Sun Feb 11 14:02:02 2024
-[1m[7m%[27m[1m[0m                                                                                ]7;file://Hunters-Air.lan/Users/hunter/Desktop/Spring%202024/Computer%20Networks/Project1[0m[27m[24m[Jhunter@Hunters-Air Project1 % [K[?2004h./client
-[K[K[A[30C[1B[A[30Ccurl http://localhost:6789/HelloWorld.html[1B[A[30Cls                                        [1B[K[A[32Ccd Desktop/Spring\ 2024/Computer\ Networks/Project1[K[A[29Cls[K[1B[K[A[32Ccurl http://localhost:6789/HelloWorld.html[1B[K[A[30C./client                                  [1B[K[A[30C        [1B[K[A[30C../server[1m [0m[0m       test_server.sh[1m [0m[0m [?2004l[1BServer is listening on port 6789...
+Script started on Fri Feb 16 20:07:43 2024
+Restored session: Fri Feb 16 20:02:05 EST 2024
+[1m[7m%[27m[1m[0m                                                                                                                  ]7;file://Hunters-Air.lan/Users/hunter/Desktop/Spring%202024/Computer%20Networks/Project1[0m[27m[24m[Jhunter@Hunters-Air Project1 % [K[?2004hexit./threading_demo.sh[17Dclient_tests.sh  [14Dompile_and_test.sh[?2004l
+Server is listening on port 6789...
 Requesting HelloWorld.html via curl...
 <html>
 <body>
@@ -10,38 +11,93 @@ Requesting HelloWorld.html via curl...
 
 
 Stopping the server...
-./test_server.sh: line 25:  2437 Terminated: 15          ./server
+./compile_and_test.sh: line 25:  5267 Terminated: 15          ./server
+[1m[7m%[27m[1m[0m                                                                                                                  ]7;file://Hunters-Air.lan/Users/hunter/Desktop/Spring%202024/Computer%20Networks/Project1[0m[27m[24m[Jhunter@Hunters-Air Project1 % [K[?2004h./compile_and_test.sh[21Dexit                 [17D./threading_demo.sh[17Dclient_tests.sh  [?2004l
 Restarting the server for client test cases...
 Server is listening on port 6789...
 Running client test cases...
 Test case 1: Requesting HelloWorld.html using the client
+HTTP/1.0 200 OK
+Content-Type: text/html
+Content-Length: 56
+
+<html>
+<body>
+  <h1>Hello, World!</h1>
+</body>
+</html>
+
+
 
 Test case 2: Requesting NonExistentPage.html using the client
+HTTP/1.0 404 NOT FOUND
+Content-Type: text/html
+Content-Length: 48
+
+<html><body><h1>404 Not Found</h1></body></html>
 
 Stopping the server after client test cases...
-./test_server.sh: line 54:  2441 Terminated: 15          ./server
+./client_tests.sh: line 27:  5271 Terminated: 15          ./server
+[1m[7m%[27m[1m[0m                                                                                                                  ]7;file://Hunters-Air.lan/Users/hunter/Desktop/Spring%202024/Computer%20Networks/Project1[0m[27m[24m[Jhunter@Hunters-Air Project1 % [K[?2004h./client_tests.sh[14Dompile_and_test.sh[21Dexit                 [17D./compile_and_test.sh[18Dlient_tests.sh    [17D                 [17D./client_tests.sh[14Dompile_and_test.sh[21Dexit                 [17D./threading_demo.sh[?2004l
 ------ Starting Threading Demonstration ------
 Server restarted for threading demonstration
 Server is listening on port 6789...
 Starting client request for /HelloWorld.html in the background...
-Client request for /HelloWorld.html launched, output will be in response_/HelloWorld.html.txt
 Starting client request for /AnotherPage.html in the background...
-./test_server.sh: line 74: response_/HelloWorld.html.txt: No such file or directory
-Client request for /AnotherPage.html launched, output will be in response_/AnotherPage.html.txt
-./test_server.sh: line 74: response_/AnotherPage.html.txt: No such file or directory
 Starting client request for /NonExistentPage.html in the background...
-Client request for /NonExistentPage.html launched, output will be in response_/NonExistentPage.html.txt
 Waiting for server to process requests...
-./test_server.sh: line 74: response_/NonExistentPage.html.txt: No such file or directory
-Stopping the server after threading demonstration...
-./test_server.sh: line 91:  2446 Terminated: 15          ./server
-Responses from server:
+HTTP/1.0 200 OK
+Content-Type: text/html
+Content-Length: 56
+
+<html>
+<body>
+  <h1>Hello, World!</h1>
+</body>
+</html>
 
-[1m[7m%[27m[1m[0m                                                                                ]7;file://Hunters-Air.lan/Users/hunter/Desktop/Spring%202024/Computer%20Networks/Project1[0m[27m[24m[Jhunter@Hunters-Air Project1 % [K[?2004heexit[?2004l
+
+HTTP/1.0 200 OK
+HTTP/1.0 404 NOT FOUND
+Content-Type: text/html
+Content-Type: text/html
+Content-Length: 554
+Content-Length: 48
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Another Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        h1 {
+            color: #333366;
+        }
+        p {
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Another Page</h1>
+    <p>This is a sample test.</p>
+    <p>Networking is not as fun as Operating System.</p>
+</body>
+</html>
+
+Stopping the server after threading demonstration...
+./threading_demo.sh: line 33:  5277 Terminated: 15          ./server
+[1m[7m%[27m[1m[0m                                                                                                                  ]7;file://Hunters-Air.lan/Users/hunter/Desktop/Spring%202024/Computer%20Networks/Project1[0m[27m[24m[Jhunter@Hunters-Air Project1 % [K[?2004heexit[?2004l
 
 Saving session...
-...copying shared history...
 ...saving history...truncating history files...
 ...completed.
 
-Script done on Sun Feb 11 14:02:50 2024
+Script done on Fri Feb 16 20:08:26 2024
