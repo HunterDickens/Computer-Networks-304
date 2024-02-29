@@ -1,0 +1,69 @@
+Script started on 2024-02-21 14:11:58-05:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="120" LINES="30"]
+[?2004h]0;isaac@DESKTOP-KHV9GN4: ~/p1net/Project1[;32m┌──([1;34misaac㉿DESKTOP-KHV9GN4[;32m)-[[0;1m~/p1net/Project1[;32m]
+[;32m└─[1;34m$[0m bash compile_and_test.sh
+[?2004lServer is listening on port 6789...
+Requesting HelloWorld.html via curl...
+<html>
+<body>
+  <h1>Hello, World!</h1>
+</body>
+</html>
+
+
+Stopping the server...
+
+[?2004h]0;isaac@DESKTOP-KHV9GN4: ~/p1net/Project1[;32m┌──([1;34misaac㉿DESKTOP-KHV9GN4[;32m)-[[0;1m~/p1net/Project1[;32m]
+[;32m└─[1;34m$[0m bash client_s[Ktests.sh
+[?2004lrm: cannot remove 'client': No such file or directory
+Restarting the server for client test cases...
+Server is listening on port 6789...
+Running client test cases...
+Test case 1: Requesting HelloWorld.html using the client
+HTTP/1.0 200 OK
+Content-Type: text/html
+Content-Length: 56
+
+<html>
+<body>
+  <h1>Hello, World!</h1>
+</body>
+</html>
+
+
+
+Test case 2: Requesting NonExistentPage.html using the client
+HTTP/1.0 404 NOT FOUND
+Content-Type: text/html
+Content-Length: 48
+
+
+
+Stopping the server after client test cases...
+
+[?2004h]0;isaac@DESKTOP-KHV9GN4: ~/p1net/Project1[;32m┌──([1;34misaac㉿DESKTOP-KHV9GN4[;32m)-[[0;1m~/p1net/Project1[;32m]
+[;32m└─[1;34m$[0m n[Kbash threading_demo.sh
+[?2004l------ Starting Threading Demonstration ------
+Server restarted for threading demonstration
+Server is listening on port 6789...
+Starting client request for /HelloWorld.html in the background...
+Starting client request for /AnotherPage.html in the background...
+Starting client request for /NonExistentPage.html in the background...
+Waiting for server to process requests...
+HTTP/1.0 200 OK
+Content-Type: text/html
+Content-Length: 56
+
+
+HTTP/1.0 200 OK
+Content-Type: text/html
+Content-Length: 554
+
+
+Stopping the server after threading demonstration...
+
+
+[?2004h]0;isaac@DESKTOP-KHV9GN4: ~/p1net/Project1[;32m┌──([1;34misaac㉿DESKTOP-KHV9GN4[;32m)-[[0;1m~/p1net/Project1[;32m]
+[;32m└─[1;34m$[0m exit
+[?2004lexit
+
+Script done on 2024-02-21 14:13:24-05:00 [COMMAND_EXIT_CODE="143"]
